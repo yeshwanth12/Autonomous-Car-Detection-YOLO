@@ -1,6 +1,10 @@
 # Autonomous-Car-Detection-YOLO
 A simple car detection system utilizing YOLO algorithm using data from a camera mounted on the hood of a car, which takes pictures of the road ahead every few seconds while driving. 
 "You Only Look Once" (YOLO) is a popular algorithm because it achieves high accuracy while also being able to run in real-time. This algorithm "only looks once" at the image in the sense that it requires only one forward propagation pass through the network to make predictions. After non-max suppression, it then outputs recognized objects together with the bounding boxes.
+<center>
+<video width="400" height="200" src="nb_images/road_video_compressed2.mp4" type="video/mp4" controls>
+</video>
+</center>
 # How does YOLO work? 
 
 1. It uses a Deep CNN that takes an input image of m X 608 X 608 X 3 and returns 19 x 19 x 5 x 85 volume, where m is the number of training samples.
@@ -44,6 +48,17 @@ The execution environment is specified in the requirements.txt
 4. Create the YAD2K env locally. (conda env create -f environment.yml) 
 If step 4 does not work, install packages manually using instructions in YAD2K repo
 5. To generate the yolo.h5 file, run the command: `python yad2k.py yolo.cfg yolo.weights model_data/yolo.h5`
+
+# Results
+
+Found 7 boxes for test.jpg
+car 0.60 (925, 285) (1045, 374)
+car 0.66 (706, 279) (786, 350)
+bus 0.67 (5, 266) (220, 407)
+car 0.70 (947, 324) (1280, 705)
+car 0.74 (159, 303) (346, 440)
+car 0.80 (761, 282) (942, 412)
+car 0.89 (367, 300) (745, 648)
 
 ## References 
 
