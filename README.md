@@ -1,11 +1,6 @@
 # Autonomous-Car-Detection-YOLO
-A simple car detection system utilizing YOLO algorithm using data from a camera mounted on the hood of a car, which takes pictures of the road ahead every few seconds while driving. 
+A simple car detection system utilizing YOLO algorithm using data from a [camera mounted on the hood of a car](https://user-images.githubusercontent.com/5472711/109359128-89d0af00-784a-11eb-8bec-132aeb3a89cf.mp4), which takes pictures of the road ahead every few seconds while driving. 
 "You Only Look Once" (YOLO) is a popular algorithm because it achieves high accuracy while also being able to run in real-time. This algorithm "only looks once" at the image in the sense that it requires only one forward propagation pass through the network to make predictions. After non-max suppression, it then outputs recognized objects together with the bounding boxes.
-
-
-https://user-images.githubusercontent.com/5472711/109359128-89d0af00-784a-11eb-8bec-132aeb3a89cf.mp4
-
-
 
 # How does YOLO work? 
 
