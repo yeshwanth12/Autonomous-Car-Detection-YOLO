@@ -49,13 +49,21 @@ If step 4 does not work, install packages manually using instructions in YAD2K r
 # Results
 
 Found 7 boxes for test.jpg
-car 0.60 (925, 285) (1045, 374)
-car 0.66 (706, 279) (786, 350)
-bus 0.67 (5, 266) (220, 407)
-car 0.70 (947, 324) (1280, 705)
-car 0.74 (159, 303) (346, 440)
-car 0.80 (761, 282) (942, 412)
-car 0.89 (367, 300) (745, 648)
+>car 0.60 (925, 285) (1045, 374)
+
+>car 0.66 (706, 279) (786, 350)
+
+>bus 0.67 (5, 266) (220, 407)
+
+>car 0.70 (947, 324) (1280, 705)
+
+>car 0.74 (159, 303) (346, 440)
+
+>car 0.80 (761, 282) (942, 412)
+
+>car 0.89 (367, 300) (745, 648)
+
+<img src="images/output.png" style="width:500px;height:500px;">
 
 ## References 
 
