@@ -51,7 +51,7 @@ If step 4 does not work, install packages manually using instructions in YAD2K r
 - Joseph Redmon, Ali Farhadi - [YOLO9000: Better, Faster, Stronger](https://arxiv.org/abs/1612.08242) (2016)
 - Allan Zelener - [YAD2K: Yet Another Darknet 2 Keras](https://github.com/allanzelener/YAD2K)
 - The official YOLO website (https://pjreddie.com/darknet/yolo/) 
-- 
+- Convolutional Neural Networks, Deep learning Specialization by Deeplearning.AI : https://www.coursera.org/learn/convolutional-neural-networks
 * [YAD2K repository](https://github.com/allanzelener/YAD2K)
 * [yolov2 official website](https://pjreddie.com/darknet/yolov2/)
 * [yolov3 official website](https://pjreddie.com/darknet/yolo/)
