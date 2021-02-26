@@ -1,9 +1,9 @@
 # Autonomous-Car-Detection-YOLO
-Autonomous Car Detection Application using YOLO algorithm
-
+A simple car detection system utilizing YOLO algorithm using data from a camera mounted on the hood of a car, which takes pictures of the road ahead every few seconds while driving. 
+"You Only Look Once" (YOLO) is a popular algorithm because it achieves high accuracy while also being able to run in real-time. This algorithm "only looks once" at the image in the sense that it requires only one forward propagation pass through the network to make predictions. After non-max suppression, it then outputs recognized objects together with the bounding boxes.
 # How does YOLO work? 
 
-1. It uses Depp CNN that takes an input image of m X 608 X 608 X 3 and returns 19 x 19 x 5 x 85 volume, where m is the number of training samples.
+1. It uses a Deep CNN that takes an input image of m X 608 X 608 X 3 and returns 19 x 19 x 5 x 85 volume, where m is the number of training samples.
 
 <img src="nb_images/architecture.png" style="width:700px;height:400;">
 
@@ -34,11 +34,9 @@ This shows the predicted class for each of the 19 x 19 grid, based on the maximu
 
 ## Depedencies
 
-The execution environment is specified in the requirements.txt file (created by pip freeze). The code was developed using Tensorflow 1.2.1 and Keras 2.0.7
+The execution environment is specified in the requirements.txt
 
-## How I generated yolo.h5 from YAD2K repository
-
-Creating env from environment.yml did not work for me. I created a new env locally and installed necessary packages from scratch. 
+## To generate yolo.h5 from YAD2K repository
 
 1. Clone the YAD2K repo
 2. Download the yolo.weights file from [here]( http://pjreddie.com/media/files/yolo.weights)
