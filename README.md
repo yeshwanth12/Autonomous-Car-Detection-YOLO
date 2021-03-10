@@ -13,11 +13,11 @@ A simple car detection system utilizing YOLO algorithm using data from a [camera
 <img src="nb_images/flatten.png" style="width:700px;height:400;">
 
 3. Compute the class Score given by 
-$score_{c,i} = p_{c} \times c_{i}$: the probability that there is an object $p_{c}$ times the probability that the object is a certain class $c_{i}$.
+score(c,i) = p(c) x c(i): the probability that there is an object p(c) times the probability that the object is a certain class c(i).
 
 <img src="nb_images/probability_extraction.png" style="width:700px;height:400;">
 
-4. Selecting the predicted boxes
+4. - Each cell has 5  anchor boxes. In total, the model predicts: 19x19x5 = 1805 boxes just by looking once at the image (one forward pass through the network)! which is a lot! To reduce the number of detected boxes, apply two techniques
 
 **Score-Thresholding**: 
 Apply a threshold over the computed scores for each grid and discard the detected boxes that did not meet the threshold
@@ -48,6 +48,9 @@ If step 4 does not work, install packages manually using instructions in YAD2K r
 
 # Results
 
+Input image:
+<img src="nb_images/test.jpg" style="width:768px;height:432px;">
+
 Found 7 boxes for test.jpg
 >car 0.60 (925, 285) (1045, 374)
 
@@ -63,7 +66,7 @@ Found 7 boxes for test.jpg
 
 >car 0.89 (367, 300) (745, 648)
 
-<img src="images/output.png" style="width:500px;height:500px;">
+<img src="out/output.jpg" style="width:768px;height:432px;">
 
 ## References 
 
